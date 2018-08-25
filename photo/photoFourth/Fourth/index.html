@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="generator" content="EditPlus">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>我的学习日记</title>
+	  <style type="text/css">
+	  	*{padding:0px;margin:0px;}
+	  	body{
+	  		background: url(images/bg.jpg);
+	  	}
+	  	#Course{width:723px;height:633px;border:3px solid #fff;margin:45px auto;}
+	    #Course ul li{
+	    	float:left;
+	    	width:240px;height:210px;
+	    	list-style: none;
+	    	border-bottom:1px solid #fff ;border-right:1px solid #fff ;
+	    	position:relative;
+	    }
+	    #Course ul li img.default{z-index:20;position: relative;}
+	    #Course ul li a{width:100%;height:100%;z-index:10;display:block;
+    text-align:center;line-height: 210px;font-weight:bold;font-family: "微软雅黑";
+    color:#fff;font-size: 40px;text-decoration: none;background: rgba(0,0,0,0.5);
+	 position:absolute;top:0px;left:0px;   }
+	  #Course ul li img{ position:absolute;top:0px;left:0px;width:240px;height:210px;}
+	  </style> 
+	</head>
+	<body>
+	<div id="Course">
+		<ul>
+			<li>
+				<img src="img/d.png" class="default"/>
+			    <a href="#">夏天的你</a>
+			    <img src="img/a1.jpg" class="right"/> 
+			    <img src="img/a2.jpg" class="bottom"/> 
+			</li>
+			<li><img src="img/e.png"class="default"/>
+			 <a href="#">秋天的你</a>
+			    <img src="img/b1.jpg" class="left"/> 
+			    <img src="img/b2.jpg" class="right"/> 
+			    <img src="img/b3.jpg" class="bottom"/> 
+			</li>
+			<li><img src="img/f.png" class="default"/> 
+				<a href="#">爱自拍的你</a>
+				<img src="img/c1.jpg" class="left"/>
+				<img src="img/c2.jpg" class="bottom"/> 
+			</li>
+			<li><img src="img/g.png"class="default"/> 
+				<a href="#">可爱的你</a>
+				<img src="img/d1.jpg" class="top"/> 
+			    <img src="img/d2.jpg" class="right"/> 
+			    <img src="img/d3.jpg" class="bottom"/> 
+			</li>
+			<li><img src="img/h.png" class="default"/> 
+				<a href="#">甜蜜的我们</a>
+				<img src="img/e1.JPG" class="top"/> 
+			    <img src="img/e2.JPG" class="right"/> 
+			    <img src="img/e3.JPG" class="left"/>
+			    <img src="img/e4.jpg" class="bottom"/>
+			</li>
+			<li><img src="img/i.png" class="default"/> 
+				<a href="#">工作的你</a>
+				<img src="img/f1.jpg" class="top"/> 
+			    <img src="img/f2.jpg" class="left"/>
+			    <img src="img/f3.jpg" class="bottom"/>
+			</li>
+			<li><img src="img/a.png" class="default"/> 
+				<a href="#">冬天的你</a>
+				<img src="img/g1.jpg" class="top"/> 
+			    <img src="img/g2.jpg" class="right"/> 
+			</li>
+			<li><img src="img/b.png" class="default"/> 
+				<a href="#">春天的你</a>
+				<img src="img/h1.jpg" class="top"/> 
+			    <img src="img/h2.jpg" class="right"/> 
+			    <img src="img/h3.jpg" class="left"/>
+			</li>
+			<li><img src="img/c.png" class="default"/> 
+				<a href="#">爱吃的你</a>
+				<img src="img/i1.jpg" class="top"/> 
+			    <img src="img/i2.jpg" class="left"/> 
+			</li>
+		</ul>
+	</div>	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$("#Course ul li").hover(function(){
+			$("a",this).css("z-index","30");
+			$(this).css("z-index","28");
+			$("img.right",this).stop(true,true).animate({left:"240px"},240);
+			$("img.left",this).stop(true,true).animate({left:"-240px"},240);
+			$("img.top",this).stop(true,true).animate({top:"-210px"},240);
+			$("img.bottom",this).stop(true,true).animate({top:"210px"},240);
+		},function(){
+			$("a",this).css("z-index","10");
+			$(this).css("z-index","20");
+			$("img",this).stop(true,true).animate({left:"0px",top:"0px"},240);
+			$("img").siblings().find("img").css("z-index","0");
+			$(this).siblings().find("img.default").css("z-index","20");
+		})
+		
+		
+	</script>
+	
+	</body>
+</html>
