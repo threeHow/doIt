@@ -183,6 +183,7 @@ public class ActivitiUtils {
      *
      * @param activity
      * @return
+     * @author zhujun
      */
     public List<PvmTransition> getCurrentActivitiImplPvm(ActivityImpl activity) {
         List<PvmTransition> outgoingTransitions = activity.getOutgoingTransitions();
