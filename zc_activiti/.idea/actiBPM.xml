@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BPMNEditorStateService">
+    <stateFile url="file://$PROJECT_DIR$/src/main/resources/shenqing2.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resources/caiwu.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resources/shenqing.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resources/shenqing1.bpmn.bpmn">
+      <view grid="false" />
+    </stateFile>
+    <stateFile url="file://$PROJECT_DIR$/src/main/resources/shenqing1.bpmn">
+      <view grid="false" />
+    </stateFile>
+  </component>
+</project>
